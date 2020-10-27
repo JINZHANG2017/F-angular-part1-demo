@@ -1,0 +1,5 @@
+<input id="balance" [(ngModel)]="balance">
+<button (click)="dec()">less</button>
+<button (click)="inc()">more</button>
+<label for="balance">Wallet Balance:</label>
+<span [innerText]="balance | currency"></span>

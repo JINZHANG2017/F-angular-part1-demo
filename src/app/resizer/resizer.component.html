@@ -1,0 +1,6 @@
+
+
+<p #p>Hello World</p>
+<app-resize #resize size="16" (sizeChange)="p.style.fontSize = $event + 'px'"></app-resize>
+<button (click)="resize.size = 16">Reset</button>
+<button (click)="reset()">Reset2</button>
